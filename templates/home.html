@@ -1,0 +1,11 @@
+<h1>Twitter Bot Detector</h1>
+<h2>Enter your tweet below:</h2>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.tweet.label }} {{form.tweet}}
+    <br>
+    
+    <br>
+    {{ form.submit() }}
+</form>
