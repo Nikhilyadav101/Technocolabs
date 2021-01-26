@@ -32,7 +32,7 @@ h5py==2.10.0
 idna==2.5 
 idna-ssl==1.1.0
 intel-numpy==1.14.3
-intel-openmp==2021
+intel-openmp==2021.1.1
 ipykernel 
 ipython 
 ipython-genutils 
