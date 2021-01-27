@@ -7,6 +7,7 @@ from wtforms import TextField,SubmitField
 from flask_wtf import FlaskForm 
 import re
 import nltk
+
 nltk.download('stopwords')
 
 # to remove stopword 
@@ -16,6 +17,11 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import joblib
 
+
+
+	#loading models
+Count_vectorizer = joblib.load("Countvector.sav") #countvectorizer
+Classifier = joblib.load("Naive_bayse_model.sav") #NBclassifier
 
 
 
@@ -89,9 +95,6 @@ def index():
 
 
 
-	#loading models
-Count_vectorizer = joblib.load("Countvector.sav") #countvectorizer
-Classifier = joblib.load("finalized_model.sav") #LRclassifier
 
 
 @app.route('/prediction')
