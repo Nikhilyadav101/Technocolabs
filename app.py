@@ -65,7 +65,7 @@ def return_prediction(Count_vectorizer,Classifier,content):
 	if predict[0]==0:
 		pred = 'Bot tweet'
 	else:
-		pred = 'Real Tweet'
+		pred = 'Real Person Tweet'
 		
 	return pred
 
